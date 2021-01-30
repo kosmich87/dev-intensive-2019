@@ -47,7 +47,7 @@ object PreferencesRepository {
         when (value) {
             is String -> putString(key, value)
             is Int -> putInt(key, value)
-            else -> error("Only primitives types")
+            else -> error("Only primitives types can used")
         }
         apply()
     }
